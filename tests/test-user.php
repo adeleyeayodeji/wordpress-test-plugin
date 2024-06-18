@@ -49,7 +49,7 @@ class TestUser extends WP_UnitTestCase
      */
     public function tearDown(): void
     {
-        // wp_delete_user($this->user_id);
+        wp_delete_user($this->user_id);
         parent::tearDown();
     }
 
