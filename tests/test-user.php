@@ -1,10 +1,4 @@
-# Example Project
-
-[![Test](https://github.com/wp-phpunit/example-project/actions/workflows/test.yml/badge.svg)](https://github.com/wp-phpunit/example-project/actions/workflows/test.yml)
-
-A complete example for using WP PHPUnit in the context of a full WordPress site or app.
-
-```php
+<?php
 
 /**
  * Test user functionality
@@ -24,7 +18,7 @@ class TestUser extends WP_UnitTestCase
             'role'         => 'administrator',
             'user_login'   => 'admin2',
             'user_pass'    => 'admin2',
-            'user_email'   => 'email@example',
+            'user_email'   => 'admin@admin.com',
         ];
 
         //check if user exists
@@ -91,6 +85,3 @@ class TestUser extends WP_UnitTestCase
         }
     }
 }
-
-
-```
